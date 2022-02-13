@@ -56,7 +56,6 @@
   background-color: green; 
   grid-column: 2/4;
   grid-row: 2/4;
-  z-index: auto;
   
 } 
 .yellow2 {
