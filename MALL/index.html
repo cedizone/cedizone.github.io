@@ -12,29 +12,32 @@
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.jpg" alt="CediMall Logo">
-            </a>
-            <nav>
-
-                <button type="button">Location</button>
+            <div class="top">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/logo.jpg" alt="CediMall Logo">
+                </a>
+            
+                
+                <button class="button" type="button">Location</button>
 
                 <form class="example" action="action_page.php">
                     <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
+                </form>
 
-                <button type="button">Order</button>
+                <button type="submit"><i class="fa fa-search"></i></button>
+
+                <button class="button" type="button">Order</button>
                
-                <a class="material-icons-outlined" style="font-size:50px;color:#2196F3" href="cart.html">
+                <a class="material-icons-outlined" style="font-size:30px;color:#2196F3" href="cart.html">
                     shopping_cart
                 </a>
 
-                <a class="material-icons-outlined" style="font-size:50px;color:#2196F3" href="account.html">
+                <a class="material-icons-outlined" style="font-size:30px;color:#2196F3" href="account.html">
                     account_circle
                 </a>
-            </nav>
-            <nav>
+            </div>
+            <nav class="bottom">
+
                 <a href="index.html">All</a>
                 <a href="index.html">Best Sellers</a>
                 <a href="index.html">New Releases</a>
@@ -46,61 +49,65 @@
         <div id="hero">
             <div id="hero-box">
                 <img id="hero-img" src="images/hero.jpg" alt="The future starts now">
-                <button type="button">Buy Now</button>
             </div>
             <section id="hero-msg">
                 <h1 class="home-title">A Way In To The Future</h1>
                 <h4>The best e-commerce platform to invest in. With or without referrals you earn 5% of your capital every 10days(15% in 30days) till you decide to withdraw the capital. You also get our highly-rated quality iPhone 11 pro max, Macbook 15 2021, etc. Wait no longer, come on board and create a path to financial freedom. </h4>
-                
+                <div class='button-box'>
+                    <a class='book' href="rates.html">Buy VIP 5</a>
+                </div>
             </section>
         </div>
-        <main class="home-grid">
-            <section class="fashion">
-                <img class="fashion-img" src="images/fashion.jpg" alt="select fashion">
-                <button type="button">Buy Now</button>
-            </section>
-            <section class="bag">
-                <img class="bag-img" src="images/bag.jpg" alt="select bag">
-                <button type="button">Buy Now</button>
-            </section>
-            <section class="shoe">
-                <img class="shoe-img" src="images/shoe.jpg" alt="select shoe">
-                <button type="button">Buy Now</button>
-            </section>
-            <section class="electronic">
-                <img class="electronic-img" src="images/electronic.jpg" alt="select electronic">
-                <button type="button">Buy Now</button>
-            </section>
-            <div id="Sub-grid"></div>
-            
-            <section class="phone">
-                <img class="phone1-img" src="images/iphone10.jpg" alt="iphone10">
-                <img class="phone2-img" src="images/iphone20.jpg" alt="iphone20">
-                <img class="phone3-img" src="images/iphone30.jpg" alt="iphone30">
-                <img class="phone4-img" src="images/iphone40.jpg" alt="iphone40">
-                <button type="button">Buy Now</button>
-            </section>
-            <section class="mac">
-                <img class="mac1-img" src="images/mac10.jpg" alt="mac10">
-                <img class="mac2-img" src="images/mac20.jpg" alt="mac20">
-                <img class="mac3-img" src="images/mac30.jpg" alt="mac30">
-                <img class="mac4-img" src="images/mac40.jpg" alt="mac40">
-                <button type="button">Buy Now</button>
-            </section>
-            <section class="shoe">
-                <img class="shoe1-img" src="images/shoe1.jpg" alt="shoe1">
-                <img class="shoe2-img" src="images/shoe2.jpg" alt="shoe2">
-                <img class="shoe3-img" src="images/shoe3.jpg" alt="shoe3">
-                <img class="shoe4-img" src="images/shoe4.jpg" alt="shoe4">
-                <button type="button">Buy Now</button>
-            </section>
-            <section class="cloth">
-                <img class="cloth1-img" src="images/cloth1.jpg" alt="cloth1">
-                <img class="cloth2-img" src="images/cloth2.jpg" alt="cloth2">
-                <img class="cloth3-img" src="images/cloth3.jpg" alt="cloth3">
-                <img class="cloth4-img" src="images/cloth4.jpg" alt="cloth4">
-                <button type="button">Buy Now</button>
-            </section>
+        <main>
+            <div class="home-grid">
+                <section class="fashion">
+                    <img class="fashion-img" src="images/fashion.jpg" alt="select fashion">
+                    <button type="button">Buy VIP 1</button>
+                </section>
+                <section class="bag">
+                    <img class="bag-img" src="images/bag.jpg" alt="select bag">
+                    <button type="button">Buy VIP 2</button>
+                </section>
+                <section class="shoe">
+                    <img class="shoe-img" src="images/shoe.jpg" alt="select shoe">
+                    <button type="button">Buy VIP 3</button>
+                </section>
+                <section class="electronic">
+                    <img class="electronic-img" src="images/electronic.jpg" alt="select electronic">
+                    <button type="button">Buy VIP 4</button>
+                </section>
+            </div>
+
+            <div id="sub-grid">
+                <section class="phone">
+                    <img class="phone1-img" src="images/iphone10.jpg" alt="iphone10">
+                    <img class="phone2-img" src="images/iphone20.jpg" alt="iphone20">
+                    <img class="phone3-img" src="images/iphone30.jpg" alt="iphone30">
+                    <img class="phone4-img" src="images/iphone40.jpg" alt="iphone40">
+                    <button type="button">Buy Now</button>
+                </section>
+                <section class="mac">
+                    <img class="mac1-img" src="images/mac10.jpg" alt="mac10">
+                    <img class="mac2-img" src="images/mac20.jpg" alt="mac20">
+                    <img class="mac3-img" src="images/mac30.jpg" alt="mac30">
+                    <img class="mac4-img" src="images/mac40.jpg" alt="mac40">
+                    <button type="button">Buy Now</button>
+                </section>
+                <section class="shoes">
+                    <img class="shoe1-img" src="images/shoe1.jpg" alt="shoe1">
+                    <img class="shoe2-img" src="images/shoe2.jpg" alt="shoe2">
+                    <img class="shoe3-img" src="images/shoe3.jpg" alt="shoe3">
+                    <img class="shoe4-img" src="images/shoe4.jpg" alt="shoe4">
+                    <button type="button">Buy Now</button>
+                </section>
+                <section class="cloth">
+                    <img class="cloth1-img" src="images/cloth1.jpg" alt="cloth1">
+                    <img class="cloth2-img" src="images/cloth2.jpg" alt="cloth2">
+                    <img class="cloth3-img" src="images/cloth3.jpg" alt="cloth3">
+                    <img class="cloth4-img" src="images/cloth4.jpg" alt="cloth4">
+                    <button type="button">Buy Now</button>
+                </section>
+            </div>
         </main>
 
         <footer>

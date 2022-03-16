@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>account page</title>
+    <title>CediMall Home Page</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -12,29 +12,31 @@
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.jpg" alt="CediMall Logo">
-            </a>
-            <nav>
-
-                <button type="button">Location</button>
+            <div class="top">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/logo.jpg" alt="CediMall Logo">
+                </a>
+            
+                
+                <button class="button" type="button">Location</button>
 
                 <form class="example" action="action_page.php">
                     <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
-
-                <button type="button">Order</button>
+                </form>
+                
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <button class="button" type="button">Order</button>
                
-                <a class="material-icons-outlined" style="font-size:50px;color:#2196F3" href="cart.html">
+                <a class="material-icons-outlined" style="font-size:30px;color:#2196F3" href="cart.html">
                     shopping_cart
                 </a>
 
-                <a class="material-icons-outlined" style="font-size:50px;color:#2196F3" href="account.html">
+                <a class="material-icons-outlined" style="font-size:30px;color:#2196F3" href="account.html">
                     account_circle
                 </a>
-            </nav>
-            <nav>
+            </div>
+            <nav class="bottom">
+
                 <a href="index.html">All</a>
                 <a href="index.html">Best Sellers</a>
                 <a href="index.html">New Releases</a>
@@ -43,17 +45,120 @@
                 <a href="index.html">Customer Service</a>
             </nav>
         </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/hero.jpg" alt="The future starts now">
+        
+
+    <div id="id02" class="modal2">
+        <h2>Please Log In</h2>
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images/avatar.png" alt="Avatar" class="avatar">
             </div>
-            <section id="hero-msg">
-                <h1 class="home-title">A Way In To The Future</h1>
-                <h4>The best e-commerce platform to invest in. With or without referrals you earn 5% of your capital every 10days(15% in 30days) till you decide to withdraw the capital. You also get our highly-rated quality iPhone 11 pro max, Macbook 15 2021, etc. Wait no longer, come on board and create a path to financial freedom. </h4>
+
+            <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
                 
-            </section>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+        <h2>Please Sign Up Here</h2>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+        
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <main>
+            <div class="home-grid">
+                <section class="fashion">
+                    <img class="fashion-img" src="images/fashion.jpg" alt="select fashion">
+                    <button type="button">Buy VIP 1</button>
+                </section>
+                <section class="bag">
+                    <img class="bag-img" src="images/bag.jpg" alt="select bag">
+                    <button type="button">Buy VIP 2</button>
+                </section>
+                <section class="shoe">
+                    <img class="shoe-img" src="images/shoe.jpg" alt="select shoe">
+                    <button type="button">Buy VIP 3</button>
+                </section>
+                <section class="electronic">
+                    <img class="electronic-img" src="images/electronic.jpg" alt="select electronic">
+                    <button type="button">Buy VIP 4</button>
+                </section>
+            </div>
+
+            <div id="sub-grid">
+                <section class="phone">
+                    <img class="phone1-img" src="images/iphone10.jpg" alt="iphone10">
+                    <img class="phone2-img" src="images/iphone20.jpg" alt="iphone20">
+                    <img class="phone3-img" src="images/iphone30.jpg" alt="iphone30">
+                    <img class="phone4-img" src="images/iphone40.jpg" alt="iphone40">
+                    <button type="button">Buy Now</button>
+                </section>
+                <section class="mac">
+                    <img class="mac1-img" src="images/mac10.jpg" alt="mac10">
+                    <img class="mac2-img" src="images/mac20.jpg" alt="mac20">
+                    <img class="mac3-img" src="images/mac30.jpg" alt="mac30">
+                    <img class="mac4-img" src="images/mac40.jpg" alt="mac40">
+                    <button type="button">Buy Now</button>
+                </section>
+                <section class="shoes">
+                    <img class="shoe1-img" src="images/shoe1.jpg" alt="shoe1">
+                    <img class="shoe2-img" src="images/shoe2.jpg" alt="shoe2">
+                    <img class="shoe3-img" src="images/shoe3.jpg" alt="shoe3">
+                    <img class="shoe4-img" src="images/shoe4.jpg" alt="shoe4">
+                    <button type="button">Buy Now</button>
+                </section>
+                <section class="cloth">
+                    <img class="cloth1-img" src="images/cloth1.jpg" alt="cloth1">
+                    <img class="cloth2-img" src="images/cloth2.jpg" alt="cloth2">
+                    <img class="cloth3-img" src="images/cloth3.jpg" alt="cloth3">
+                    <img class="cloth4-img" src="images/cloth4.jpg" alt="cloth4">
+                    <button type="button">Buy Now</button>
+                </section>
+            </div>
         </main>
 
         <footer>
@@ -72,5 +177,136 @@
                 </a>
             </div>
         </footer>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
 </body>
+
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+    
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #474e5d;
+      padding-top: 50px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* Style the horizontal ruler */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+     
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1f1f1;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #f44336;
+      cursor: pointer;
+    }
+    
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+        /* Center the image and position the close button */
+    .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    }
+
+    img.avatar {
+    width: 20%;
+    border-radius: 50%;
+    }
+
+    .container {
+    padding: 16px;
+    }
+
+    span.psw {
+    float: right;
+    padding-top: 16px;
+    }
+    
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancelbtn, .signupbtn {
+         width: 100%;
+      }
+    }
+    </style>
 </html>
