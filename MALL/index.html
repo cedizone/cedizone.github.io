@@ -51,35 +51,35 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                  <img src="images/hero.jpg" style="width:100%">
+                  <img src="images/hero.jpg" alt="hero-image" style="width:100%">
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="images/hero1.jpg" style="width:100%">
+                  <img src="images/hero1.jpg" alt="hero-image" style="width:100%">
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="images/hero2.jpg" style="width:100%">
+                  <img src="images/hero2.jpg" alt="hero-image" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/hero3.jpg" style="width:100%">
+                    <img src="images/hero3.jpg" alt="hero-image" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/hero4.jpg" style="width:100%">
+                    <img src="images/hero4.jpg" alt="hero-image" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/hero5.jpg" style="width:100%">
+                    <img src="images/hero5.jpg" alt="hero-image" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/hero6.jpg" style="width:100%">
+                    <img src="images/hero6.jpg" alt="hero-image" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/hero7.jpg" style="width:100%">
+                    <img src="images/hero7.jpg" alt="hero-image" style="width:100%">
                 </div>
                 <br>
             
@@ -184,7 +184,7 @@
           slideIndex++;
           if (slideIndex > slides.length) {slideIndex = 1}
           slides[slideIndex-1].style.display = "block";  
-          setTimeout(showSlides, 5000); // Change image every 2 seconds
+          setTimeout(showSlides, 5000);
         }
     </script>
 
@@ -222,12 +222,12 @@
     }
     
     @-webkit-keyframes fade {
-      from {opacity: .5} 
+      from {opacity: .4} 
       to {opacity: 1}
     }
     
     @keyframes fade {
-      from {opacity: .5} 
+      from {opacity: .4} 
       to {opacity: 1}
     }
     
@@ -235,6 +235,7 @@
     @media only screen and (max-width: 300px) {
       .text {font-size: 11px}
     }
-    </style>
+
+</style>
 
 </html>
