@@ -57,12 +57,19 @@ button:hover {
 input{
     width: 300px;
     margin: auto;
+    border: 2px solid #9f9b96;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
 }
 
 .material-icons-outlined{
     width: 80px;
     margin: auto;
-    align-self: right;
 }
 
 .example{
